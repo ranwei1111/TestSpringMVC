@@ -13,9 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.wran.ssm.model.User;
 import com.wran.ssm.service.IUserService;
-
-
-
 /**
  * <p>Project: b2bv2</p> 
   * <p>ModuleID: User</p>
@@ -32,6 +29,6 @@ public class UserController {
         LOG.info("开始查询…………");
         List<User> userList = userService.getAllUser();
         model.addAttribute("userList", userList);
-        return "user";
+        return "index";
     }
 }
